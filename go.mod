@@ -1,3 +1,3 @@
-module github.com/yaucp/Learning-GoLang
+module Learning-GoLang
 
 go 1.20

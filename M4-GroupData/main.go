@@ -14,10 +14,10 @@ func main() {
 	b := [...]string{"Hello", "There"}
 	fmt.Printf("Length: %v \t %v\n", len(b), b)
 
-	var c [2]int
+	var c [2]int //Length of array is integrated into type as well
 	c[0] = 10
 	c[1] = 100
-	fmt.Println(c)
+	fmt.Printf("%T \t%v\n", c, c)
 
 	//Slice
 	//Built on arrays but can expand/change sizes

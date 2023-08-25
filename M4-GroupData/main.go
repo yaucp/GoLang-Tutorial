@@ -23,6 +23,13 @@ func main() {
 	//Built on arrays but can expand/change sizes
 	//Have length & capacity
 
+	xs := []string{"hello", "golang"} //No number in the bracket (length)
+	fmt.Println(xs, len(xs))
+
+	for idx, val := range xs {
+		fmt.Printf("%v - %v\n", idx, val)
+	}
+
 	//Map
 	//UNORDERED, key-element
 

@@ -70,6 +70,13 @@ func main() {
 	//Calling randomFunc(ppl1) ==> people := pp1 (same underlying array)
 	//Can fix it by creating a new slice and copy the old one into the new variable
 
+	//Hands-on
+	numbers := [5]int{1, 5, 2, 3, 5}
+
+	for _, val := range numbers {
+		fmt.Println(val)
+	}
+
 	//Map
 	//UNORDERED, key-element
 

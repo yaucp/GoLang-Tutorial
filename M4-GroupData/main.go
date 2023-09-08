@@ -79,5 +79,28 @@ func main() {
 
 	//Map
 	//UNORDERED, key-element
+	//Declare it by map[KeyType]ValueType
+	ages := map[string]int{
+		"Tim":   42,
+		"Angel": 10,
+	}
+	fmt.Println(ages, len(ages))
 
+	//For range
+	for key, val := range ages {
+		fmt.Printf("%v: %v\n", key, val)
+	}
+
+	//Accessing a key that doesn't exist
+	//Returns 0-value if it
+	//Limits the scope of "age" in if-else block
+	if age, ok := ages["Tim"]; !ok {
+		fmt.Println("Test Key doesnt exist")
+	} else {
+		fmt.Printf("hey this new keys exists %v\n", age)
+	}
+
+	//Delete
+	delete(ages, "T2im")
+	fmt.Println(ages)
 }
